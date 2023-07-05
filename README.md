@@ -13,7 +13,7 @@ parlaConIO2 è allestito con le seguenti funzioni:
 - U - esci da parlaConIO.  
 
 Ogni funzione si aspetta in input un file CSV con alcuni dati utili all'invio del messaggio.  
-E' prevista una procedura iniziale per fare il match fra parametri attesi dal messaggio e colonne/etichette presenti nel CSV.  
+Per ogni funzione è previsto un passaggio iniziale per fare il match fra parametri attesi dal messaggio e colonne/etichette presenti nel CSV.  
 
 L'interazione - di tipo testuale - avviene da riga di comando.  
 
