@@ -13,7 +13,7 @@ parlaConIO2 è allestito con le seguenti funzioni:
 - U - esci da parlaConIO.  
 
 Ogni funzione si aspetta in input un file CSV con alcuni dati utili all'invio del messaggio.  
-E' prevista una procedura iniziale per fare il match fra parametri attesi dal messaggio e colonne/etichette presenti nel CSV.  
+Per ogni funzione è previsto un passaggio iniziale per fare il match fra parametri attesi dal messaggio e colonne/etichette presenti nel CSV.  
 
 L'interazione - di tipo testuale - avviene da riga di comando.  
 
@@ -44,7 +44,7 @@ Se si perde la password occorre cancellare i tre file .cfg e ripetere il primo a
 Se si vuole spostare lo script su un PC non dotato di Python si possono trasformare gli script *parlaConIO2.py* e *prepara_cfg.pyé in file eseguibili con pyInstaller:
 - *pip install pyinstaller*
 - *pyinstaller parlaConIO2.py --onefile*
-- nella sottocartella "cfg master": *pynstaller prepara_cfg.py --onefile*
+- nella sottocartella "cfg master": *pyinstaller prepara_cfg.py --onefile*
 
 Per configurare parlaConIO2 in un PC senza Python: creare una cartella "parlaConIO2" e copiarci i file *parlaConIO2.exe* e la sottocartella "cfg master" con l'eseguibile *prepara_cfg.exe* e i tre file di configurazione *.chiaro.cfg*.  
 Seguire le istruzioni di sopra per il primo avvio/configurazione.
