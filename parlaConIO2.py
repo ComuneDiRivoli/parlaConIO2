@@ -35,8 +35,12 @@ LL_ENTE = "Il Comune di Rivoli"
 DELL_ENTE = "del Comune di Rivoli"
 ALL_ENTE = "al Comune di Rivoli"
 DALL_ENTE = "dal Comune di Rivoli"
+
 URL_PAGAMENTI = "https://portale.comune.rivoli.to.it"
 URL_PRENOTAZIONE_CIE = "https://prenota.comune.rivoli.to.it/anagrafe-e-stato-civile/18/calendar"
+
+ENTE_IO_CIE = "SCI" #Servizio IO per messaggi scadenza carta di identità
+ENTE_IO_PEC = "COM" #Servizio IO per messaggi scadenza casella PEC
 
 #Regole per il logging delle chiamate requests
 #logging.basicConfig(level=logging.DEBUG)
@@ -818,6 +822,7 @@ while CONTINUARE is True:
         ricevuta={}
         ricevuta["nomeFileDati"] = NOME_FILE_DATI
         ricevuta["cartellaDiLavoro"] = PATH
+        ricevuta["utente"] = CALLING_USER
         ricevuta["data_lotto"] = DATA_LOTTO
         ricevuta["lotto_json"] = LOTTO_JSON
         ricevuta["lotto_log"] = LOTTO_LOG
@@ -882,6 +887,7 @@ while CONTINUARE is True:
         ricevuta={}
         ricevuta["nomeFileDati"] = NOME_FILE_DATI
         ricevuta["cartellaDiLavoro"] = PATH
+        ricevuta["utente"] = CALLING_USER
         ricevuta["data_lotto"] = DATA_LOTTO
         ricevuta["lotto_json"] = LOTTO_JSON
         ricevuta["lotto_log"] = LOTTO_LOG
@@ -943,6 +949,7 @@ while CONTINUARE is True:
         ricevuta={}
         ricevuta["nomeFileDati"] = NOME_FILE_DATI
         ricevuta["cartellaDiLavoro"] = PATH
+        ricevuta["utente"] = CALLING_USER
         ricevuta["data_lotto"] = DATA_LOTTO
         ricevuta["lotto_json"] = LOTTO_JSON
         ricevuta["lotto_log"] = LOTTO_LOG
@@ -1006,6 +1013,7 @@ while CONTINUARE is True:
         ricevuta={}
         ricevuta["nomeFileDati"] = NOME_FILE_DATI
         ricevuta["cartellaDiLavoro"] = PATH
+        ricevuta["utente"] = CALLING_USER
         ricevuta["data_lotto"] = DATA_LOTTO
         ricevuta["lotto_json"] = LOTTO_JSON
         ricevuta["lotto_log"] = LOTTO_LOG
@@ -1068,6 +1076,7 @@ while CONTINUARE is True:
         ricevuta={}
         ricevuta["nomeFileDati"] = NOME_FILE_DATI
         ricevuta["cartellaDiLavoro"] = PATH
+        ricevuta["utente"] = CALLING_USER
         ricevuta["data_lotto"] = DATA_LOTTO
         ricevuta["lotto_json"] = LOTTO_JSON
         ricevuta["lotto_log"] = LOTTO_LOG
@@ -1153,7 +1162,6 @@ while CONTINUARE is True:
                     LOTTO_JSON = DATI_LOTTO.get("lotto_json")
                     LOTTO_LOG = DATI_LOTTO.get("lotto_log")
                     RICEVUTA_TROVATA = True
-                
             except:
                 print(f"\nFile {nome_file_ricevuta} non trovato.")
         print("\nFile della ricevuta trovato.")
