@@ -162,3 +162,4 @@ permessi.master.cfg
 *.cfg
 *.csv
 appIO.log
+screenshots/Thumbs.db
