@@ -734,6 +734,7 @@ if ((os.path.exists("IO.cfg")) and (os.path.exists("pagoPA.cfg"))) is False:
                 passwordM = b""
     ricifra_file("pagoPA.master.cfg", CHIAVEM, CHIAVE, "pagoPA.cfg")
     ricifra_file("permessi.master.cfg", CHIAVEM, CHIAVE, "permessi.cfg")
+    CHIAVEM = ""
     print("Configurazione di pagoPA importata.")
     print("\nRicorda la password per avviare nuovamente questo programma.")
     print("Se non ricordi la password cancella il file IO.cfg e ripeti la configurazione.")
