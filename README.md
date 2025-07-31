@@ -27,8 +27,8 @@ Modificare la sezione "COSTANTI LEGATE ALL'ENTE" (riga 26+) di parlaConIO2.py pe
 Installare i moduli aggiunti Python necessari, se non presente (*pip -r requirements.txt*).
 
 Nella sottocartella "cfg master":
-- rinominare i tre file .chiaro.RIMUOVIMI.cfg in .chiaro.cfg;
-- editare i tre file .chiaro.cfg secondo il modello proposto, come segue:
+- rinominare i tre file *.chiaro.RIMUOVIMI.cfg in *.chiaro.cfg;
+- editare i tre file *.chiaro.cfg secondo il modello proposto, come segue:
  1. **IO.chiaro.cfg**: completare per ogni servizio IO conigurato nel back office di IO con codice/id (a scelta) per ogni servizio IO, APIKEY primaria e secondaria, id del servizio IO e il nome comprensibile;
  2. **pagoPA.chiaro.cfg**: completare per ogni servizio di incasso configurato presso il proprio partner tecnologico con il codice/id identificativo del servizio di incasso, il nome esteso e il codice/id del servizio IO tramite il quale inviare avvisi di pagamento;
  3. **permessi.chiaro.cfg**: completare con le funzioni parlaConIO da abilitare e i servizi IO da utilizzare.
@@ -36,7 +36,7 @@ Nella sottocartella "cfg master":
 Eseguire *prepara_cfg.py* e fornire una password master.  
 Lo script produce tre file cifrati: *IO.master.cfg*, *pagoPA.master.cfg*, *permessi.master.cfg*.  
 Copiare i file nella cartella "parlaConIO2".  
-Eseguire lo script *parlaConIO2.py* e seguire le indicazioni: al primo avvio viene chiesta una password utente per l'esecuzione e, successivamente, la password master impostato al passo precedente.  
+Eseguire lo script *parlaConIO2.py* e seguire le indicazioni: al primo avvio viene chiesta una password utente per l'esecuzione e, successivamente, la password master impostata al passo precedente.  
 Al primo avvio i tre file .master.cfg sono ricifrati con la password utente e rinominati in *IO.cfg*, *pagoPA.cfg*, *permessi.cfg*.  
 Eliminare (opzionale) i file .master.cfg.  
 Se si perde la password occorre cancellare i tre file .cfg e ripetere il primo avvio.  
