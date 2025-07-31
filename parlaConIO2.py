@@ -419,7 +419,7 @@ def crea_body_scadenza_ci(data_scadenza_documento, codice_fiscale):
 CORRISPONDENZE_CI_DEFAULT = {"data_scadenza_documento":"dataScadenzaDocumento", "codice_fiscale":"codiceFiscale"}
 
 def crea_body_scadenza_pec(nome, casella_pec, data_scadenza_pec, codice_fiscale):
-    '''Messaggio per avviso scadneza/dismissione casella PEC'''
+    '''Messaggio per avviso scadenza/dismissione casella PEC'''
     markdown = "Ciao "+nome+ ",  \nTi informiamo che **la tua casella PEC " + casella_pec + " scade il giorno "\
                 + data_scadenza_pec + "** e **non sarà più rinnovabile**, né dal Comune né da te.  \nTi invitiamo "\
                 "pertanto a prendere nota della scadenza e **salvare per tempo i messaggi** presenti nella casella.  \n"\
@@ -474,7 +474,8 @@ def crea_body_sollecito_pagamento(codice_servizio_incasso, causale, importo, cod
         "[Pagamenti Online](" + URL_PAGAMENTI + ") sul sito " + DELL_ENTE + ".  \n"\
         "Da lì potrai visualizzare anche lo storico dei tuoi pagamenti e prelevare le ricevute."
     payment_data={}
-    payment_data["amount"] = int(float(importo)*100)
+    importo_fixed=float(importo.replace(",", "."))
+    payment_data["amount"] = int(float(importo_fixed)*100)
     payment_data["notice_number"] = str(codice_avviso)
     payment_data["invalid_after_due_date"] = False
     body={}
