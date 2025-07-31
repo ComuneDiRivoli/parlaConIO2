@@ -57,7 +57,4 @@ parlaConIO2 nasce come esperienza didattica per approfondire l'uso e il funziona
 Rispetto alla prima versione sono stati migliorati alcuni aspetti di sicurezza (per esempio la memorizzazione delle APIKEY in chiaro nella cartella di lavoro).  
 L'uso dello script per interazioni reali con IO è a rischio e pericolo dell'utilizzatore.  
 
-In ogni caso, lo script è pensato per l'uso da parte di un umano che interagisce da riga di comando. Il riadattamento dello script all'interno di un processo automatico richiede ulteriori accorgimenti (es.: gestione più accurata di errori ed eccezioni e cotrollo più meticolosi dei dati in input).  
-
-
-
+In ogni caso, lo script è pensato per l'uso da parte di un umano che interagisce da riga di comando. Il riadattamento dello script all'interno di un processo automatico richiede ulteriori accorgimenti (es.: gestione più accurata di errori ed eccezioni e controllo più meticoloso dei dati in input).  
