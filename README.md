@@ -58,3 +58,8 @@ Rispetto alla prima versione sono stati migliorati alcuni aspetti di sicurezza (
 L'uso dello script per interazioni reali con IO è a rischio e pericolo dell'utilizzatore.  
 
 In ogni caso, lo script è pensato per l'uso da parte di un umano che interagisce da riga di comando. Il riadattamento dello script all'interno di un processo automatico richiede ulteriori accorgimenti (es.: gestione più accurata di errori ed eccezioni e controllo più meticoloso dei dati in input).  
+
+# Spazi di discussione
+Si invita a lasciare un saluto o un commento nel **[Libro degli ospiti](https://github.com/ComuneDiRivoli/parlaConIO2/issues/2#issue-3284433212)):** sono particolarmente graditi commenti, impressioni e suggerimenti da parte di chi opera all'interno della pubblica amministrazione e si trova ad affrontare l'integrazione di app IO nella propria organizzazione ma anche di chi opera nel settore a livello professionale.  
+ 
+E' inoltre attiva una discussione su **[forum.italia.it](https://forum.italia.it/t/parlaconio-uno-strumento-per-interagire-e-inviare-messaggi-su-app-io/26469)**.
